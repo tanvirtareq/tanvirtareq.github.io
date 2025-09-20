@@ -1,0 +1,46 @@
+{
+    "name": "Tanvir Tareq",
+    "title": "Software Engineer",
+    "aboutMe": "I am a passionate software engineer with a knack for creating elegant and efficient solutions. I have a strong background in full-stack development and a love for learning new technologies.",
+    "experience": [
+        {
+            "title": "Software Engineer",
+            "company": "Therap Bd Ltd.",
+            "period": "2023 - Present",
+            "responsibilities": [
+                "Led the development of a new microservices-based architecture.",
+                "Mentored junior engineers and conducted code reviews.",
+                "Improved application performance by 30%."
+            ]
+        }
+    ],
+    "projects": [
+        {
+            "name": "Project One",
+            "description": "A brief description of the project. What it does, the technologies used, and your role."
+        },
+        {
+            "name": "Project Two",
+            "description": "A brief description of the project. What it does, the technologies used, and your role."
+        },
+        {
+            "name": "Project Three",
+            "description": "A brief description of the project. What it does, the technologies used, and your role."
+        }
+    ],
+    "skills": [
+        "JavaScript",
+        "React",
+        "Node.js",
+        "Python",
+        "Django",
+        "PostgreSQL",
+        "Docker",
+        "AWS"
+    ],
+    "contact": {
+        "linkedin": "#",
+        "github": "#",
+        "twitter": "#"
+    }
+}
