@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', () => {
             document.getElementById('hero-img').alt = data.name;
 
             // Populate About Me
-            document.getElementById('about-me').textContent = data.aboutMe;
+            document.getElementById('about-me').innerHTML = data.aboutMe;
 
             // Populate Experience
             const experienceContainer = document.getElementById('experience-container');
