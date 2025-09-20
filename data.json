@@ -19,21 +19,32 @@
                 "Contributed to the migration of the frontend from JSP to React, modernizing the application’s interface and maintainability.",
                 "Managed code reviews for cross-team release items to ensure consistency, quality, and timely delivery."
             ],
-            "technologies": ["Java", "Spring", "Hibernate", "Oracle DB", "React", "JSP", "TestNG", "Mockito", "Playwright"]
+            "technologies": ["Java", "Spring", "Hibernate", "Oracle DB", "React", "JSP", "TestNG", "Mockito", "Playwright","HTML", "CSS", "JavaScript", "SQL", "Jenkins", "Docker", "Git", "Jira"]
         }
     ],
     "projects": [
         {
-            "name": "Project One",
-            "description": "A brief description of the project. What it does, the technologies used, and your role."
+            "name": "Dots and Boxes game",
+            "description": [
+                "Developed an interactive Dots and Boxes game using Next.js and Konva.js, supporting both multiplayer and AI-driven gameplay.",
+                "Designed and implemented two heuristic-based AI bots in JavaScript, optimizing move selection for competitive gameplay.",
+                "Built a Deep Q-Learning AI bot in Python, integrating Reinforcement Learning (DQN) to improve decision-making over time.",
+                "Developed a FastAPI-based AI server, enabling real-time AI decision-making by fetching optimal moves from the trained model."
+            ],
+            "technologies": ["Next.js", "TypeScript", "Konva.js", "Python", "FastAPI", "PyTorch", "Reinforcement Learning (DQN)"],
+            "githubLink": "https://github.com/tanvirtareq/dots_and_boxes/tree/Feature/computer-move-using-reinforcement-learning",
+            "liveAppLink": "https://dotsandboxes-silk.vercel.app/"
         },
         {
-            "name": "Project Two",
-            "description": "A brief description of the project. What it does, the technologies used, and your role."
-        },
-        {
-            "name": "Project Three",
-            "description": "A brief description of the project. What it does, the technologies used, and your role."
+            "name": "Hotel Booking Website",
+            "description": [
+                "Designed and developed a full-stack hotel booking management system to streamline reservations, room availability tracking, and customer management.",
+                "Implemented user-friendly booking workflows with secure authentication and role-based access (Admin, Manager, Customer).",
+                "Optimized the back-end architecture to ensure fast query handling and prevent double-booking issues.",
+                "Ensured scalability and maintainability by applying clean architecture and modern development practices."
+            ],
+            "technologies": ["PostgreSQL", "Java", "Spring", "Hibernate", "HTML", "CSS", "JavaScript", "JSP", "Jquery", "Bootstrap"],
+            "githubLink": "https://github.com/tanvirtareq/PanthoNibash/tree/development"
         }
     ],
     "skills": [
@@ -47,8 +58,7 @@
         "AWS"
     ],
     "contact": {
-        "linkedin": "#",
-        "github": "#",
-        "twitter": "#"
+        "linkedin": "https://www.linkedin.com/in/tanvirtareq/",
+        "github": "https://github.com/tanvirtareq"
     }
 }

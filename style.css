@@ -66,7 +66,7 @@ nav a {
 nav a:hover {
     color: #E6E6FA;
     filter: drop-shadow(0 0 10px rgba(230, 230, 250, 0.8));
-    transform: scale(1.5);
+    transform: scale(1.5) translateY(-3px);
 }
 
 /* Hero Section */
@@ -114,7 +114,7 @@ h1 {
 
 #about-me p,
 .experience-item li,
-.project-card p {
+.project-card li {
     word-spacing: 0.2rem;
     line-height: 1.6;
 }
@@ -166,8 +166,15 @@ h1 {
     color: #E6E6FA;
     padding: 0.3rem 0.7rem;
     border-radius: 5px;
-    font-size: 0.8rem;
+    font-size: 1rem;
     white-space: nowrap;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
+}
+
+.technologies-used span:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(230, 230, 250, 0.2);
+    background-color: rgba(230, 230, 250, 0.2);
 }
 
 /* Projects Section */
@@ -177,16 +184,56 @@ h1 {
 }
 
 .project-card {
-    background-color: #1f1f1f;
+    background-color: #15002B;
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
+.project-card ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    padding: 0;
+    margin-bottom: 1rem;
+}
+
+.project-card li {
+    margin-bottom: 0.5rem;
+    word-spacing: 0.2rem;
+    line-height: 1.6;
+}
+
 .project-card:hover {
     transform: translateY(-10px);
     box-shadow: 0 10px 20px rgba(230, 230, 250, 0.2);
+}
+
+.project-links {
+    margin-left: 1rem;
+    display: inline-flex;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.project-link {
+    color: #E6E6FA;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.project-link svg {
+    width: 18px;
+    height: 18px;
+    fill: currentColor;
+    transition: fill 0.3s, transform 0.3s;
+}
+
+.project-link:hover svg {
+    fill: #fff;
+    transform: scale(1.1) translateY(-3px);
 }
 
 /* Skills Section */
