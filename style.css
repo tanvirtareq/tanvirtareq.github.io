@@ -112,7 +112,9 @@ h1 {
     background-color: rgba(0,0,0,0.2);
 }
 
-#about-me {
+#about-me p,
+.experience-item li,
+.project-card p {
     word-spacing: 0.2rem;
     line-height: 1.6;
 }
@@ -130,6 +132,42 @@ h1 {
 
 .experience-item h3 {
     margin-top: 0;
+}
+
+.external-link-icon svg {
+    width: 16px;
+    height: 16px;
+    fill: #E6E6FA;
+    vertical-align: middle;
+    margin-left: 5px;
+    transition: fill 0.3s;
+}
+
+.external-link-icon:hover svg {
+    fill: #fff;
+}
+
+.technologies-used {
+    margin-top: 1rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.5rem;
+    align-items: center;
+}
+
+.technologies-used h4 {
+    margin: 0;
+    font-size: 1rem;
+    color: #E6E6FA;
+}
+
+.technologies-used span {
+    background-color: rgba(230, 230, 250, 0.1);
+    color: #E6E6FA;
+    padding: 0.3rem 0.7rem;
+    border-radius: 5px;
+    font-size: 0.8rem;
+    white-space: nowrap;
 }
 
 /* Projects Section */

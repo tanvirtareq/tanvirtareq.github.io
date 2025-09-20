@@ -10,10 +10,16 @@
             "period": "2023 - Present",
             "companyWebsite": "https://www.therapservices.net/",
             "responsibilities": [
-                "Led the development of a new microservices-based architecture.",
-                "Mentored junior engineers and conducted code reviews.",
-                "Improved application performance by 30%."
-            ]
+                "Optimized a search framework built with Java Spring and Hibernate on Oracle DB, achieving a 50x faster response.",
+                "Developed and maintained core product features in the billing system, including a dynamic rate-structure and customizable form settings.",
+                "Designed a custom validation rule engine that simplified the process of adding new business rules and improved workflow flexibility.",
+                "Integrated a digital document signing feature into form-based workflows, enabling faster and more reliable processing.",
+                "Built and maintained unit tests with TestNG and Mockito, ensuring code quality and system reliability.",
+                "Mentored junior developers in the team to help them get comfortable with the company tech stack and transferring domain knowledge in various aspects.",
+                "Contributed to the migration of the frontend from JSP to React, modernizing the application’s interface and maintainability.",
+                "Managed code reviews for cross-team release items to ensure consistency, quality, and timely delivery."
+            ],
+            "technologies": ["Java", "Spring", "Hibernate", "Oracle DB", "React", "JSP", "TestNG", "Mockito", "Playwright"]
         }
     ],
     "projects": [
