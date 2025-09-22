@@ -78,12 +78,26 @@ document.addEventListener('DOMContentLoaded', () => {
 
             // Populate Skills
             const skillsContainer = document.getElementById('skills-container');
-            data.skills.forEach(skill => {
-                const skillElement = document.createElement('div');
-                skillElement.className = 'skill';
-                skillElement.textContent = skill;
-                skillsContainer.appendChild(skillElement);
-            });
+            for (const category in data.skills) {
+                const categoryContainer = document.createElement('div');
+                categoryContainer.className = 'skill-category';
+
+                const categoryTitle = document.createElement('h3');
+                categoryTitle.textContent = category;
+                categoryContainer.appendChild(categoryTitle);
+
+                const skillsGrid = document.createElement('div');
+                skillsGrid.className = 'skills-grid';
+
+                data.skills[category].forEach(skill => {
+                    const skillElement = document.createElement('div');
+                    skillElement.className = 'skill';
+                    skillElement.textContent = skill;
+                    skillsGrid.appendChild(skillElement);
+                });
+                categoryContainer.appendChild(skillsGrid);
+                skillsContainer.appendChild(categoryContainer);
+            }
 
             // Populate Competitive Programming
             const cpContainer = document.getElementById('competitive-programming-container');

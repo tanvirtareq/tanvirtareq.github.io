@@ -67,16 +67,15 @@
             "githubLink": "https://github.com/tanvirtareq/sust-cse-society"
         }
     ],
-    "skills": [
-        "JavaScript",
-        "React",
-        "Node.js",
-        "Python",
-        "Django",
-        "PostgreSQL",
-        "Docker",
-        "AWS"
-    ],
+    "skills": {
+        "Programming Languages": ["Java", "Python", "JavaScript", "TypeScript", "C++", "C"],
+        "Frontend": ["HTML", "CSS", "React", "Next.js", "Konva.js"],
+        "Backend": ["Spring", "Hibernate", "Node.js", "Express", "FastAPI"],
+        "Databases": ["Oracle DB", "PostgreSQL", "MongoDB"],
+        "DevOps": ["Docker", "Jenkins", "Git"],
+        "Data Structures & Algorithms": ["Data Structures", "Algorithms"],
+        "Soft Skills": ["Problem-Solving", "Teamwork", "Mentorship"]
+    },
     "contact": {
         "linkedin": "https://www.linkedin.com/in/tanvirtareq/",
         "github": "https://github.com/tanvirtareq",
@@ -86,24 +85,26 @@
     "competitiveProgramming": [
         {
             "platform": "Codeforces",
-            "id": "tanvir_da",
-            "profileLink": "https://codeforces.com/profile/tanvir_da",
+            "id": "t17",
+            "profileLink": "https://codeforces.com/profile/t17",
             "achievements": [
-                "Candidate Master (Top 0.03% globally)"
+                "Candidate Master (Top 0.03% globally)",
+                "Max rating 1941"
             ]
         },
         {
             "platform": "CodeChef",
-            "id": "tanvir_da",
-            "profileLink": "https://www.codechef.com/users/tanvir_da",
+            "id": "tanvirtareq",
+            "profileLink": "https://www.codechef.com/users/tanvirtareq",
             "achievements": [
-                "5-star (Top 1% globally)"
+                "5-star (Top 1% globally)",
+                "Max rating 2101"
             ]
         },
         {
             "platform": "LeetCode",
-            "id": "tanvir_da",
-            "profileLink": "https://leetcode.com/tanvir_da/",
+            "id": "tanvirtareq",
+            "profileLink": "https://leetcode.com/tanvirtareq/",
             "achievements": [
                 "High rating of 2283 (Top 0.69% globally)"
             ]
@@ -113,7 +114,11 @@
             "id": "",
             "profileLink": "",
             "achievements": [
-                "4-time Meta HackerCup T-shirt winner (Top 8%, 6%, 4%, and 959th worldwide)"
+                "4-time Meta HackerCup T-shirt winner",
+                "Ranked in the top 8% in 2020", 
+                "Ranked in the top 6% in 2021", 
+                "Ranked in the top 4% in 2022", 
+                "Ranked in the top 4% in 2024" 
             ]
         }
     ]
