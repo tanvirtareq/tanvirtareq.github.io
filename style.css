@@ -1,10 +1,26 @@
+:root {
+    --background-color: #1A0B2E;
+    --card-background-color: #1A0B2E;
+    --text-color: #e0e0e0;
+    --primary-color: #F0F0FF;
+    --hover-color: #fff;
+    --header-background-color: rgba(26, 11, 46, 0.85);
+    --skill-background-color: rgba(230, 230, 250, 0.1);
+    --skill-hover-background-color: rgba(230, 230, 250, 0.2);
+    --section-background-color: rgba(0, 0, 0, 0.2);
+    --footer-background-color: #1f1f1f;
+    --shadow-color: rgba(230, 230, 250, 0.2);
+    --hover-shadow-color: rgba(230, 230, 250, 0.6);
+    --border-color: rgba(255, 255, 255, 0.2);
+}
+
 /* General Styles */
 body {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     margin: 0;
     padding: 0;
-    background: linear-gradient(135deg, #100019, #1A0033);
-    color: #e0e0e0;
+    background: var(--background-color);
+    color: var(--text-color);
     scroll-behavior: smooth;
 }
 
@@ -18,12 +34,12 @@ h2 {
     text-align: center;
     margin-bottom: 2rem;
     font-size: 2.5rem;
-    color: #E6E6FA;
+    color: var(--primary-color);
 }
 
 /* Header */
 header {
-    background-color: rgba(0, 0, 30, 0.85);
+    background-color: var(--header-background-color);
     backdrop-filter: blur(10px);
     padding: 1rem 0;
     position: fixed;
@@ -31,8 +47,8 @@ header {
     top: 0;
     z-index: 1000;
     transition: background-color 0.3s;
-    box-shadow: 0 1px 30px rgba(230, 230, 250, 0.2);
-    border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+    box-shadow: 0 1px 30px var(--shadow-color);
+    border-bottom: 2px solid var(--border-color);
 }
 
 nav {
@@ -46,7 +62,7 @@ nav {
 .logo {
     font-size: 1.5rem;
     font-weight: bold;
-    color: #E6E6FA;
+    color: var(--primary-color);
 }
 
 .nav-links ul {
@@ -57,16 +73,16 @@ nav {
 
 nav a {
     display: inline-block;
-    color: #e0e0e0;
+    color: var(--text-color);
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s, filter 0.3s, transform 0.3s;
 }
 
 nav a:hover {
-    color: #E6E6FA;
-    filter: drop-shadow(0 0 10px rgba(230, 230, 250, 0.8));
-    transform: scale(1.5) translateY(-3px);
+    color: var(--primary-color);
+    filter: drop-shadow(0 0 10px var(--hover-shadow-color));
+    transform: scale(1.1) translateY(-3px);
 }
 
 .menu-toggle {
@@ -80,7 +96,7 @@ nav a:hover {
     display: block;
     width: 25px;
     height: 3px;
-    background-color: #E6E6FA;
+    background-color: var(--primary-color);
     margin: 5px 0;
     transition: 0.4s;
 }
@@ -102,14 +118,14 @@ nav a:hover {
     width: 300px;
     height: 300px;
     border-radius: 50%;
-    border: 3px solid #E6E6FA;
+    border: 3px solid var(--primary-color);
     object-fit: cover;
     transition: transform 0.3s, filter 0.3s;
 }
 
 .profile-img:hover {
     transform: scale(1.05);
-    filter: drop-shadow(0 0 15px rgba(230, 230, 250, 0.6));
+    filter: drop-shadow(0 0 15px var(--hover-shadow-color));
 }
 
 h1 {
@@ -125,7 +141,7 @@ h1 {
 /* About Section */
 #about {
     padding: 4rem 0;
-    background-color: rgba(0,0,0,0.2);
+    background-color: var(--section-background-color);
 }
 
 #about-me p,
@@ -142,7 +158,7 @@ h1 {
 
 .experience-item {
     margin-bottom: 2rem;
-    border-left: 3px solid #E6E6FA;
+    border-left: 3px solid var(--primary-color);
     padding-left: 1.5rem;
 }
 
@@ -153,14 +169,14 @@ h1 {
 .external-link-icon svg {
     width: 16px;
     height: 16px;
-    fill: #E6E6FA;
+    fill: var(--primary-color);
     vertical-align: middle;
     margin-left: 5px;
     transition: fill 0.3s;
 }
 
 .external-link-icon:hover svg {
-    fill: #fff;
+    fill: var(--hover-color);
 }
 
 .technologies-used {
@@ -174,12 +190,12 @@ h1 {
 .technologies-used h4 {
     margin: 0;
     font-size: 1rem;
-    color: #E6E6FA;
+    color: var(--primary-color);
 }
 
 .technologies-used span {
-    background-color: rgba(230, 230, 250, 0.1);
-    color: #E6E6FA;
+    background-color: var(--skill-background-color);
+    color: var(--primary-color);
     padding: 0.3rem 0.7rem;
     border-radius: 5px;
     font-size: 1rem;
@@ -189,18 +205,18 @@ h1 {
 
 .technologies-used span:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 10px rgba(230, 230, 250, 0.2);
-    background-color: rgba(230, 230, 250, 0.2);
+    box-shadow: 0 5px 10px var(--shadow-color);
+    background-color: var(--skill-hover-background-color);
 }
 
 /* Projects Section */
 #projects {
     padding: 4rem 0;
-    background-color: rgba(0,0,0,0.2);
+    background-color: var(--section-background-color);
 }
 
 .project-card {
-    background-color: #15002B;
+    background-color: var(--card-background-color);
     padding: 1.5rem;
     margin-bottom: 1.5rem;
     border-radius: 8px;
@@ -222,7 +238,7 @@ h1 {
 
 .project-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(230, 230, 250, 0.2);
+    box-shadow: 0 10px 20px var(--shadow-color);
 }
 
 .project-links {
@@ -233,7 +249,7 @@ h1 {
 }
 
 .project-link {
-    color: #E6E6FA;
+    color: var(--primary-color);
     text-decoration: none;
     display: flex;
     align-items: center;
@@ -248,7 +264,7 @@ h1 {
 }
 
 .project-link:hover svg {
-    fill: #fff;
+    fill: var(--hover-color);
     transform: scale(1.1) translateY(-3px);
 }
 
@@ -264,8 +280,8 @@ h1 {
 }
 
 .skill {
-    background-color: rgba(230, 230, 250, 0.1);
-    color: #E6E6FA;
+    background-color: var(--skill-background-color);
+    color: var(--primary-color);
     padding: 1rem;
     text-align: center;
     border-radius: 8px;
@@ -274,14 +290,14 @@ h1 {
 
 .skill:hover {
     transform: translateY(-3px);
-    box-shadow: 0 5px 10px rgba(230, 230, 250, 0.2);
-    background-color: rgba(230, 230, 250, 0.2);
+    box-shadow: 0 5px 10px var(--shadow-color);
+    background-color: var(--skill-hover-background-color);
 }
 
 /* Competitive Programming Section */
 #competitive-programming {
     padding: 4rem 0;
-    background-color: rgba(0,0,0,0.2);
+    background-color: var(--section-background-color);
 }
 
 .cp-profiles-grid {
@@ -291,7 +307,7 @@ h1 {
 }
 
 .cp-profile-card {
-    background-color: #15002B;
+    background-color: var(--card-background-color);
     padding: 1.5rem;
     border-radius: 8px;
     transition: transform 0.3s, box-shadow 0.3s;
@@ -299,11 +315,11 @@ h1 {
 
 .cp-profile-card:hover {
     transform: translateY(-10px);
-    box-shadow: 0 10px 20px rgba(230, 230, 250, 0.2);
+    box-shadow: 0 10px 20px var(--shadow-color);
 }
 
 .cp-profile-card h3 {
-    color: #E6E6FA;
+    color: var(--primary-color);
     text-decoration: none;
     transition: color 0.3s;
 }
@@ -328,24 +344,24 @@ h1 {
 #contact {
     padding: 4rem 0;
     text-align: center;
-    background-color: rgba(0,0,0,0.2);
+    background-color: var(--section-background-color);
 }
 
 .social-links a {
     margin: 0 1rem;
-    color: #E6E6FA;
+    color: var(--primary-color);
     text-decoration: none;
     font-size: 1.2rem;
     transition: color 0.3s;
 }
 
 .social-links a:hover {
-    color: #fff;
+    color: var(--hover-color);
 }
 
 /* Footer */
 footer {
-    background-color: #1f1f1f;
+    background-color: var(--footer-background-color);
     text-align: center;
     padding: 1rem 0;
 }
