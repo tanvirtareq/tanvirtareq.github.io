@@ -121,5 +121,72 @@
                 "Ranked in the top 4% in 2024" 
             ]
         }
+    ],
+    "education": [
+        {
+            "degree": "Bachelor of Science in Computer Science and Engineering",
+            "institution": "Shahjalal University of Science and Technology",
+            "period": "2017 - 2022",
+            "notableCourses": [
+                "Data Structures and Algorithms",
+                "Object-Oriented Programming",
+                "Database Management Systems",
+                "Operating Systems",
+                "Computer Networks",
+                "Artificial Intelligence",
+                "Machine Learning"
+            ],
+            "research": "Undergraduate Thesis on Natural Language Processing"
+        },
+        {
+            "degree": "Higher Secondary Certificate (HSC)",
+            "institution": "Scholarshome Majortila College, Sylhet",
+            "period": "2017",
+            "result": "GPA 5.00",
+            "achievements": ["Achieved government scholarship"]
+        },
+        {
+            "degree": "Secondary School Certificate (SSC)",
+            "institution": "Jalalabad Cantonment Board High School, Sylhet",
+            "period": "2014",
+            "result": "GPA 5.00"
+        }
+    ],
+    "judgingExperience": [
+        {
+            "role": "Judge and Problem Setter",
+            "event": "Sylhet Engineering College Junior Inter University Programming Contest 2022",
+            "responsibilities": [
+                "Evaluated solutions and provided feedback to 82 teams consisting of 3 members each from around 30 universities in Bangladesh.",
+                "Worked alongside 5 other judges to ensure a fair and challenging contest for participants."
+            ]
+        },
+        {
+            "role": "Problem Setter",
+            "event": "BSFMSTU CSE FEST Programming Contest 2023",
+            "responsibilities": [
+                "Designed and prepared 4 challenging programming problems for the contest."
+            ]
+        },
+        {
+            "role": "Judge",
+            "event": "SUST CSE Carnival 2024 (IUPC)",
+            "responsibilities": [
+                "Judged at SUST CSE Carnival 2024, where 120 teams of 3 students from different universities across Bangladesh participated.",
+                "Wrote alternative solutions and added test cases to ensure a strong dataset."
+            ]
+        }
+    ],
+    "teachingExperience": [
+        {
+            "role": "Trainer",
+            "institution": "Notre Dame University Bangladesh",
+            "courses": [
+                "Algorithm",
+                "Data Structures",
+                "C",
+                "C++"
+            ]
+        }
     ]
 }

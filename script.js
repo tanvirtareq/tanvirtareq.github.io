@@ -122,6 +122,72 @@ document.addEventListener('DOMContentLoaded', () => {
                 cpContainer.appendChild(profileCard);
             });
 
+            // Populate Education
+            const educationContainer = document.getElementById('education-container');
+            data.education.forEach(edu => {
+                const eduCard = document.createElement('div');
+                eduCard.className = 'education-card';
+                let content = `
+                    <h3>${edu.degree}</h3>
+                    <p>${edu.institution} | ${edu.period}</p>
+                `;
+                if (edu.notableCourses) {
+                    content += `
+                        <h4>Notable Courses</h4>
+                        <ul>
+                            ${edu.notableCourses.map(course => `<li>${course}</li>`).join('')}
+                        </ul>
+                    `;
+                }
+                if (edu.research) {
+                    content += `<p><strong>Research:</strong> ${edu.research}</p>`;
+                }
+                if (edu.result) {
+                    content += `<p><strong>Result:</strong> ${edu.result}</p>`;
+                }
+                if (edu.achievements) {
+                    content += `
+                        <h4>Achievements</h4>
+                        <ul>
+                            ${edu.achievements.map(ach => `<li>${ach}</li>`).join('')}
+                        </ul>
+                    `;
+                }
+                eduCard.innerHTML = content;
+                educationContainer.appendChild(eduCard);
+            });
+
+            // Populate Judging Experience
+            const judgingContainer = document.getElementById('judging-experience-container');
+            data.judgingExperience.forEach(item => {
+                const judgingCard = document.createElement('div');
+                judgingCard.className = 'judging-experience-card';
+                judgingCard.innerHTML = `
+                    <h3>${item.role}</h3>
+                    <p>${item.event}</p>
+                    <ul>
+                        ${item.responsibilities.map(res => `<li>${res}</li>`).join('')}
+                    </ul>
+                `;
+                judgingContainer.appendChild(judgingCard);
+            });
+
+            // Populate Teaching Experience
+            const teachingContainer = document.getElementById('teaching-experience-container');
+            data.teachingExperience.forEach(item => {
+                const teachingCard = document.createElement('div');
+                teachingCard.className = 'teaching-experience-card';
+                teachingCard.innerHTML = `
+                    <h3>${item.role}</h3>
+                    <p>${item.institution}</p>
+                    <h4>Courses Taught</h4>
+                    <ul>
+                        ${item.courses.map(course => `<li>${course}</li>`).join('')}
+                    </ul>
+                `;
+                teachingContainer.appendChild(teachingCard);
+            });
+
             // Populate Contact
             const contactContainer = document.getElementById('contact-container');
             contactContainer.innerHTML = `

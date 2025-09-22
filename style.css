@@ -351,6 +351,95 @@ h1 {
     margin-bottom: 0.5rem;
 }
 
+/* Education Section */
+#education {
+    padding: 4rem 0;
+}
+
+.education-card {
+    margin-bottom: 2rem;
+    border-left: 3px solid var(--primary-color);
+    padding-left: 1.5rem;
+}
+
+.education-card h3 {
+    margin-top: 0;
+}
+
+.education-card h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.education-card ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    padding: 0;
+}
+
+.education-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Judging Experience Section */
+#judging-experience {
+    padding: 4rem 0;
+    background-color: var(--section-background-color);
+}
+
+.judging-experience-card {
+    margin-bottom: 2rem;
+    border-left: 3px solid var(--primary-color);
+    padding-left: 1.5rem;
+}
+
+.judging-experience-card h3 {
+    margin-top: 0;
+}
+
+.judging-experience-card ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    padding: 0;
+}
+
+.judging-experience-card li {
+    margin-bottom: 0.5rem;
+}
+
+/* Teaching Experience Section */
+#teaching-experience {
+    padding: 4rem 0;
+    background-color: var(--section-background-color);
+}
+
+.teaching-experience-card {
+    margin-bottom: 2rem;
+    border-left: 3px solid var(--primary-color);
+    padding-left: 1.5rem;
+}
+
+.teaching-experience-card h3 {
+    margin-top: 0;
+}
+
+.teaching-experience-card h4 {
+    margin-top: 1rem;
+    margin-bottom: 0.5rem;
+    color: var(--primary-color);
+}
+
+.teaching-experience-card ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    padding: 0;
+}
+
+.teaching-experience-card li {
+    margin-bottom: 0.5rem;
+}
+
 /* Contact Section */
 #contact {
     padding: 4rem 0;
