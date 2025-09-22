@@ -85,14 +85,48 @@ document.addEventListener('DOMContentLoaded', () => {
                 skillsContainer.appendChild(skillElement);
             });
 
+            // Populate Competitive Programming
+            const cpContainer = document.getElementById('competitive-programming-container');
+            data.competitiveProgramming.forEach(profile => {
+                const profileCard = document.createElement('div');
+                profileCard.className = 'cp-profile-card';
+                profileCard.innerHTML = `
+                    <h3>${profile.platform}</h3>
+                    ${profile.id ? `<p>ID: ${profile.id} 
+                        ${profile.profileLink ? `
+                        <a href="${profile.profileLink}" target="_blank" rel="noopener noreferrer" class="external-link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                <path fill-rule="evenodd" d="M16 0h-5.5a.5.5 0 0 0 0 1h4.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V6.5a.5.5 0 0 0 1 0V.5a.5.5 0 0 0-.5-.5z"/>
+                            </svg>
+                        </a>` : ''}
+                    </p>` : ''}
+                    <ul>
+                        ${profile.achievements.map(ach => `<li>${ach}</li>`).join('')}
+                    </ul>
+                `;
+                cpContainer.appendChild(profileCard);
+            });
+
             // Populate Contact
             const contactContainer = document.getElementById('contact-container');
             contactContainer.innerHTML = `
                 <a href="${data.contact.linkedin}">LinkedIn</a>
                 <a href="${data.contact.github}">GitHub</a>
+                <a href="mailto:${data.contact.email}">Email</a>
+                <a href="tel:${data.contact.phone}">Phone</a>
             `;
 
             // Populate Footer
             document.getElementById('footer-text').textContent = `&copy; ${new Date().getFullYear()} ${data.name}`;
+
+            // Mobile menu toggle
+            const mobileMenu = document.getElementById('mobile-menu');
+            const navLinks = document.getElementById('nav-links');
+
+            mobileMenu.addEventListener('click', () => {
+                navLinks.classList.toggle('active');
+                mobileMenu.classList.toggle('active');
+            });
         });
 });

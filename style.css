@@ -49,7 +49,7 @@ nav {
     color: #E6E6FA;
 }
 
-nav ul {
+.nav-links ul {
     list-style: none;
     display: flex;
     gap: 1.5rem;
@@ -67,6 +67,22 @@ nav a:hover {
     color: #E6E6FA;
     filter: drop-shadow(0 0 10px rgba(230, 230, 250, 0.8));
     transform: scale(1.5) translateY(-3px);
+}
+
+.menu-toggle {
+    display: none; /* Hidden by default */
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.menu-toggle span {
+    display: block;
+    width: 25px;
+    height: 3px;
+    background-color: #E6E6FA;
+    margin: 5px 0;
+    transition: 0.4s;
 }
 
 /* Hero Section */
@@ -248,16 +264,64 @@ h1 {
 }
 
 .skill {
-    background-color: #333;
+    background-color: rgba(230, 230, 250, 0.1);
+    color: #E6E6FA;
     padding: 1rem;
     text-align: center;
     border-radius: 8px;
-    transition: background-color 0.3s;
+    transition: transform 0.3s, box-shadow 0.3s, background-color 0.3s;
 }
 
 .skill:hover {
-    background-color: #E6E6FA;
-    color: #121212;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(230, 230, 250, 0.2);
+    background-color: rgba(230, 230, 250, 0.2);
+}
+
+/* Competitive Programming Section */
+#competitive-programming {
+    padding: 4rem 0;
+    background-color: rgba(0,0,0,0.2);
+}
+
+.cp-profiles-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+}
+
+.cp-profile-card {
+    background-color: #15002B;
+    padding: 1.5rem;
+    border-radius: 8px;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.cp-profile-card:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 10px 20px rgba(230, 230, 250, 0.2);
+}
+
+.cp-profile-card h3 {
+    color: #E6E6FA;
+    text-decoration: none;
+    transition: color 0.3s;
+}
+
+.cp-profile-card p {
+    margin-top: 0.5rem;
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+.cp-profile-card ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    padding: 0;
+}
+
+.cp-profile-card li {
+    margin-bottom: 0.5rem;
 }
 
 /* Contact Section */
@@ -294,8 +358,40 @@ footer {
 
 /* Responsive Design */
 @media (max-width: 768px) {
-    nav ul {
+    .nav-links {
         display: none;
+        width: 100%;
+    }
+
+    .nav-links.active {
+        display: block;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        background-color: rgba(0, 0, 30, 0.95);
+        width: 100%;
+        padding: 1rem 0;
+    }
+
+    .nav-links ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-toggle {
+        display: block;
+    }
+
+    .menu-toggle.active span:nth-child(1) {
+        transform: rotate(-45deg) translate(-5px, 6px);
+    }
+
+    .menu-toggle.active span:nth-child(2) {
+        opacity: 0;
+    }
+
+    .menu-toggle.active span:nth-child(3) {
+        transform: rotate(45deg) translate(-5px, -6px);
     }
 
     h1 {

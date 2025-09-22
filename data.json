@@ -45,6 +45,26 @@
             ],
             "technologies": ["PostgreSQL", "Java", "Spring", "Hibernate", "HTML", "CSS", "JavaScript", "JSP", "Jquery", "Bootstrap"],
             "githubLink": "https://github.com/tanvirtareq/PanthoNibash/tree/development"
+        }, 
+        {
+            "name": "AI-powered Anki Add-on",
+            "description": [
+                "Developed an Anki Desktop App add-on using agentic AI to create custom flashcards and add them to decks.",
+                "Utilized the Gemini API to generate high-quality, contextually relevant flashcards based on user input."
+            ],
+            "technologies": ["Python", "Anki Add-on Development", "Gemini API"],
+            "githubLink": "https://github.com/tanvirtareq/anki-card-creator-add-on"
+        }, 
+        {
+            "name": "Social Media Platform",
+            "description": [
+                "Built a social media platform with features like user authentication, profile management, posting, commenting, and liking.",
+                "Implemented real-time notifications and messaging using WebSockets.",
+                "Designed live markdown editing, and post sharing with integrated polls.",
+                "Ensured data integrity and security with robust back-end validation and encryption."
+            ],
+            "technologies": ["Node.js", "Express", "MongoDB", "React", "Socket.io", "JWT"],
+            "githubLink": "https://github.com/tanvirtareq/sust-cse-society"
         }
     ],
     "skills": [
@@ -59,6 +79,42 @@
     ],
     "contact": {
         "linkedin": "https://www.linkedin.com/in/tanvirtareq/",
-        "github": "https://github.com/tanvirtareq"
-    }
+        "github": "https://github.com/tanvirtareq",
+        "email": "cse.tanvir.17@gmail.com",
+        "phone": "+8801798234746"
+    },
+    "competitiveProgramming": [
+        {
+            "platform": "Codeforces",
+            "id": "tanvir_da",
+            "profileLink": "https://codeforces.com/profile/tanvir_da",
+            "achievements": [
+                "Candidate Master (Top 0.03% globally)"
+            ]
+        },
+        {
+            "platform": "CodeChef",
+            "id": "tanvir_da",
+            "profileLink": "https://www.codechef.com/users/tanvir_da",
+            "achievements": [
+                "5-star (Top 1% globally)"
+            ]
+        },
+        {
+            "platform": "LeetCode",
+            "id": "tanvir_da",
+            "profileLink": "https://leetcode.com/tanvir_da/",
+            "achievements": [
+                "High rating of 2283 (Top 0.69% globally)"
+            ]
+        },
+        {
+            "platform": "Meta HackerCup",
+            "id": "",
+            "profileLink": "",
+            "achievements": [
+                "4-time Meta HackerCup T-shirt winner (Top 8%, 6%, 4%, and 959th worldwide)"
+            ]
+        }
+    ]
 }
