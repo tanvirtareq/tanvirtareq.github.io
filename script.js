@@ -172,6 +172,22 @@ document.addEventListener('DOMContentLoaded', () => {
                 judgingContainer.appendChild(judgingCard);
             });
 
+            // Populate Programming Contest Experience
+            const programmingContestContainer = document.getElementById('programming-contest-experience-container');
+            data.programmingContestExperience.forEach(item => {
+                const contestCard = document.createElement('div');
+                contestCard.className = 'programming-contest-experience-card';
+                contestCard.innerHTML = `
+                    <h3>${item.event}</h3>
+                    ${item.team ? `<p>Team: ${item.team}</p>` : ''}
+                    ${item.id ? `<p>ID: ${item.id}</p>` : ''}
+                    <ul>
+                        ${item.achievements.map(ach => `<li>${ach}</li>`).join('')}
+                    </ul>
+                `;
+                programmingContestContainer.appendChild(contestCard);
+            });
+
             // Populate Teaching Experience
             const teachingContainer = document.getElementById('teaching-experience-container');
             data.teachingExperience.forEach(item => {

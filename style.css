@@ -408,6 +408,32 @@ h1 {
     margin-bottom: 0.5rem;
 }
 
+/* Programming Contest Experience Section */
+#programming-contest-experience {
+    padding: 4rem 0;
+}
+
+.programming-contest-experience-card {
+    margin-bottom: 2rem;
+    border-left: 3px solid var(--primary-color);
+    padding-left: 1.5rem;
+}
+
+.programming-contest-experience-card h3 {
+    margin-top: 0;
+}
+
+.programming-contest-experience-card ul {
+    list-style: disc;
+    margin-left: 1.5rem;
+    padding: 0;
+}
+
+.programming-contest-experience-card li {
+    margin-bottom: 0.5rem;
+}
+
+
 /* Teaching Experience Section */
 #teaching-experience {
     padding: 4rem 0;
