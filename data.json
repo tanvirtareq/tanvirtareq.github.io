@@ -179,13 +179,12 @@
     ],
     "teachingExperience": [
         {
-            "role": "Trainer",
             "institution": "Notre Dame University Bangladesh",
-            "courses": [
-                "Algorithm",
-                "Data Structures",
-                "C",
-                "C++"
+            "responsibilities": [
+                "Taught 25 undergraduate students Data Structures, Algorithms, C, and C++",
+                "Designed and delivered lectures, coding exercises, and real-world problem-solving sessions",
+                "Mentored students in improving problem-solving skills and preparing for programming contests",
+                "Simplified complex concepts to improve student understanding and engagement"
             ]
         }
     ]

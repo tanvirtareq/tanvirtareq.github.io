@@ -178,11 +178,10 @@ document.addEventListener('DOMContentLoaded', () => {
                 const teachingCard = document.createElement('div');
                 teachingCard.className = 'teaching-experience-card';
                 teachingCard.innerHTML = `
-                    <h3>${item.role}</h3>
-                    <p>${item.institution}</p>
-                    <h4>Courses Taught</h4>
+                    <h3>${item.institution}</h3>
+                    ${item.period ? `<p>${item.period}</p>` : ''}
                     <ul>
-                        ${item.courses.map(course => `<li>${course}</li>`).join('')}
+                        ${item.responsibilities.map(res => `<li>${res}</li>`).join('')}
                     </ul>
                 `;
                 teachingContainer.appendChild(teachingCard);
