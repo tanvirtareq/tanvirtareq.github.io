@@ -172,11 +172,11 @@ document.addEventListener('DOMContentLoaded', () => {
                 judgingContainer.appendChild(judgingCard);
             });
 
-            // Populate Programming Contest Experience
-            const programmingContestContainer = document.getElementById('programming-contest-experience-container');
+            // Populate Programming Contest Achievements
+            const programmingContestContainer = document.getElementById('programming-contest-achievements-container');
             data.programmingContestExperience.forEach(item => {
                 const contestCard = document.createElement('div');
-                contestCard.className = 'programming-contest-experience-card';
+                contestCard.className = 'programming-contest-achievements-card';
                 contestCard.innerHTML = `
                     <h3>${item.event}</h3>
                     ${item.team ? `<p>Team: ${item.team}</p>` : ''}
@@ -202,6 +202,33 @@ document.addEventListener('DOMContentLoaded', () => {
                 `;
                 teachingContainer.appendChild(teachingCard);
             });
+
+            // Populate Technical Writing Experience
+            const technicalWritingContainer = document.getElementById('technical-writing-experience-container');
+            if (data.technicalWritingExperience) {
+                data.technicalWritingExperience.forEach(item => {
+                    const technicalWritingCard = document.createElement('div');
+                    technicalWritingCard.className = 'technical-writing-experience-card';
+
+                    let companyHTML = item.company;
+                    if (item.companyWebsite) {
+                        companyHTML += ` <a href="${item.companyWebsite}" target="_blank" rel="noopener noreferrer" class="external-link-icon">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                                <path fill-rule="evenodd" d="M8.636 3.5a.5.5 0 0 0-.5-.5H1.5A1.5 1.5 0 0 0 0 4.5v10A1.5 1.5 0 0 0 1.5 16h10a1.5 1.5 0 0 0 1.5-1.5V7.864a.5.5 0 0 0-1 0V14.5a.5.5 0 0 1-.5.5h-10a.5.5 0 0 1-.5-.5v-10a.5.5 0 0 1 .5-.5h6.636a.5.5 0 0 0 .5-.5z"/>
+                                <path fill-rule="evenodd" d="M16 0h-5.5a.5.5 0 0 0 0 1h4.793L6.146 9.146a.5.5 0 1 0 .708.708L15 1.707V6.5a.5.5 0 0 0 1 0V.5a.5.5 0 0 0-.5-.5z"/>
+                            </svg>
+                        </a>`;
+                    }
+
+                    technicalWritingCard.innerHTML = `
+                        <h3>${companyHTML}</h3>
+                        <ul>
+                            ${item.responsibilities.map(res => `<li>${res}</li>`).join('')}
+                        </ul>
+                    `;
+                    technicalWritingContainer.appendChild(technicalWritingCard);
+                });
+            }
 
             // Populate Contact
             const contactContainer = document.getElementById('contact-container');

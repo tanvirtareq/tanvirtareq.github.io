@@ -408,28 +408,28 @@ h1 {
     margin-bottom: 0.5rem;
 }
 
-/* Programming Contest Experience Section */
-#programming-contest-experience {
+/* Programming Contest Achievements Section */
+#programming-contest-achievements {
     padding: 4rem 0;
 }
 
-.programming-contest-experience-card {
+.programming-contest-achievements-card {
     margin-bottom: 2rem;
     border-left: 3px solid var(--primary-color);
     padding-left: 1.5rem;
 }
 
-.programming-contest-experience-card h3 {
+.programming-contest-achievements-card h3 {
     margin-top: 0;
 }
 
-.programming-contest-experience-card ul {
+.programming-contest-achievements-card ul {
     list-style: disc;
     margin-left: 1.5rem;
     padding: 0;
 }
 
-.programming-contest-experience-card li {
+.programming-contest-achievements-card li {
     margin-bottom: 0.5rem;
 }
 

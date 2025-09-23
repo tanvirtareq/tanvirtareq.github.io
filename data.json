@@ -176,6 +176,16 @@
             ]
         }
     ],
+    "technicalWritingExperience": [
+        {
+            "company": "Enablegeek",
+            "companyWebsite": "https://www.enablegeek.com/",
+            "responsibilities": [
+                "Authored blogs on Algorithms and Data Structures, simplifying complex topics for students and enthusiasts.",
+                "Wrote Python Q&A articles covering common pitfalls and practical coding solutions."
+            ]
+        }
+    ],
     "programmingContestExperience": [
         {
             "event": "Cefalo CodeFiesta 2022: AUST IUPC",
