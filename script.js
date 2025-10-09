@@ -240,7 +240,7 @@ document.addEventListener('DOMContentLoaded', () => {
             `;
 
             // Populate Footer
-            document.getElementById('footer-text').textContent = `&copy; ${new Date().getFullYear()} ${data.name}`;
+            document.getElementById('footer-text').innerHTML = `&copy; ${new Date().getFullYear()} ${data.name}`;
 
             // Mobile menu toggle
             const mobileMenu = document.getElementById('mobile-menu');
