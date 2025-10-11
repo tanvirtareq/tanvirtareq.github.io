@@ -65,6 +65,16 @@
             ],
             "technologies": ["Node.js", "Express", "MongoDB", "React", "Socket.io", "JWT"],
             "githubLink": "https://github.com/tanvirtareq/sust-cse-society"
+        },
+        {
+            "name": "Real-Time Sign Language Detection",
+            "description": [
+                "Developed a real-time sign language detection application using Python and Mediapipe.",
+                "Created an intuitive interface to collect sign language data from users.",
+                "Trained the collected data using Long Short-Term Memory (LSTM) networks for precise gesture recognition.",
+                "Built a complete application enabling real-time detection and interpretation of sign language gestures with high accuracy."
+            ],
+            "technologies": ["Python", "Mediapipe", "OpenCV", "PyQt"]
         }
     ],
     "skills": {
@@ -169,10 +179,10 @@
         {
             "institution": "Notre Dame University Bangladesh",
             "responsibilities": [
-                "Taught 25 undergraduate students Data Structures, Algorithms, C, and C++",
-                "Designed and delivered lectures, coding exercises, and real-world problem-solving sessions",
-                "Mentored students in improving problem-solving skills and preparing for programming contests",
-                "Simplified complex concepts to improve student understanding and engagement"
+                "Teach undergraduate students Data Structures, Algorithms, C, and C++.",
+                "Designed and delivered lectures, coding exercises, and real-world problem-solving sessions.",
+                "Mentored students in improving problem-solving skills and preparing for programming contests.",
+                "Simplified complex concepts to improve student understanding and engagement."
             ]
         }
     ],
