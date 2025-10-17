@@ -75,6 +75,15 @@
                 "Built a complete application enabling real-time detection and interpretation of sign language gestures with high accuracy."
             ],
             "technologies": ["Python", "Mediapipe", "OpenCV", "PyQt"]
+        }, 
+        {
+            "name": "Graphing Tool",
+            "description": [
+                "Developed a JavaFX-based interactive graphing tool, similar to GeoGebra, for visualizing and drawing points, lines, circles, shapes, equations, and parallel/perpendicular lines.",
+                "Focused on delivering a user-friendly interface with precise geometric rendering and dynamic coordinate manipulation."
+            ],
+            "technologies": ["Java", "JavaFX"],
+            "githubLink": "https://github.com/tanvirtareq/mygeocal"
         }
     ],
     "skills": {
