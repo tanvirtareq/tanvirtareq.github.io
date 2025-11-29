@@ -10,6 +10,7 @@
             "period": "2023 - Present",
             "companyWebsite": "https://www.therapservices.net/",
             "responsibilities": [
+                "Engineered a high-performance Excel data ingestion pipeline with optimized batching and parallel execution to migrate millions of legacy records from an external platform, enabling seamless enterprise onboarding and reducing manual migration effort by 95%.",
                 "Optimized a search framework built with Java Spring and Hibernate on Oracle DB, achieving a 50x faster response.",
                 "Developed and maintained core product features in the billing system, including a dynamic rate-structure and customizable form settings.",
                 "Designed a custom validation rule engine that simplified the process of adding new business rules and improved workflow flexibility.",
@@ -74,7 +75,7 @@
                 "Trained the collected data using Long Short-Term Memory (LSTM) networks for precise gesture recognition.",
                 "Built a complete application enabling real-time detection and interpretation of sign language gestures with high accuracy."
             ],
-            "technologies": ["Python", "Mediapipe", "OpenCV", "PyQt"]
+            "technologies": ["Python", "Mediapipe", "OpenCV", "PyQt", "Computer Vision"]
         }, 
         {
             "name": "Graphing Tool",
